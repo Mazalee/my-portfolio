@@ -1,0 +1,151 @@
+.navbar {
+  background-color: black;
+  color: white;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  position: relative;
+  z-index: 9999;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.logoLink {
+  text-decoration: none;
+}
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.logoCircle {
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f50b0a;
+  color: white;
+  border-radius: 9999px;
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: bold;
+}
+.logoWrapper h1 {
+  font-size: 1rem;
+}
+
+.linksWrapper {
+  display: none;
+}
+
+.linksList {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  list-style: none;
+}
+
+.link {
+  display: inline-block;
+  font-size: 1.125rem;
+  padding: 0.25rem 1rem;
+  transition: all 0.5s;
+  text-decoration: none;
+  color: white;
+}
+
+.link:hover {
+  box-shadow: 0 0px 20px 5px rgb(255, 0, 0);
+  background-color: #f50b0a;
+  transform: scale(1.1);
+}
+
+.activeLink {
+  color: #f50b0a;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.activeLink:hover {
+  color: white;
+}
+
+.btnLink {
+  text-decoration: none;
+  color: white;
+}
+
+.btn {
+  background: linear-gradient(to right, #f50b0a, rgba(245, 11, 10, 0.5));
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  transition-duration: 300ms;
+  border: none;
+  font-size: 1.125rem;
+}
+
+.btn:hover {
+  box-shadow: 0 0px 20px 5px rgb(255, 0, 0);
+}
+
+.mobileMenu {
+  display: block;
+}
+
+.menuIcon {
+  display: flex;
+  font-size: 2.25rem;
+}
+
+@media (min-width: 768px) {
+  .linksWrapper {
+    display: block;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}

@@ -1,0 +1,137 @@
+.section {
+  background-color: black;
+  color: white;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2.5rem;
+}
+
+.formWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: rgba(245, 11, 10, 0.45);
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 32rem;
+}
+
+.form h2 {
+  font-size: 2rem;
+}
+
+.inputSection {
+  margin-bottom: 2rem;
+}
+
+.label {
+  color: rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  background-color: black;
+  color: white;
+  margin-top: 0.25rem;
+  outline: none;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #f50b0a;
+  box-shadow: 0 0 0 3px rgba(245, 11, 10, 0.3);
+}
+
+.button {
+  background-color: #f50b0a;
+  color: white;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 10px rgba(245, 11, 10, 0.5);
+}
+
+.image {
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow-x: visible;
+  animation: rocket 3s infinite ease-in-out;
+}
+
+@keyframes rocket {
+  0%,
+  100% {
+    transform: rotate(-2deg) translate(0px, 0px);
+  }
+  50% {
+    transform: rotate(2deg) translate(10px, 10px);
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .imageWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .image {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}

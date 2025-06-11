@@ -1,0 +1,210 @@
+.heroSection {
+  color: white;
+  background: black;
+}
+
+.gradientOverlay {
+  background: linear-gradient(to bottom, rgba(245, 11, 10, 0.5), black);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.brandInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+.textWrap {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.nameText {
+  font-size: 3rem;
+  font-family: "Satisfy", cursive;
+  -webkit-text-stroke: 1px rgb(255, 0, 0);
+  line-height: 1;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.textWrap p:nth-child(1) {
+  font-size: 2.25rem;
+  line-height: 1;
+}
+.textWrap p:nth-child(3) {
+  font-size: 0.875rem;
+  line-height: 1.375;
+  padding-bottom: 1.5rem;
+}
+
+.btn {
+  background: linear-gradient(to right, #f50b0a, rgba(245, 11, 10, 0.5));
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  margin-inline: auto;
+  border-radius: 0.25rem;
+  transition-duration: 300ms;
+  border: none;
+  font-size: 1rem;
+  color: white;
+  display: flex;
+  /* justify-content: center; */
+}
+.btn:hover {
+  box-shadow: 0 0px 20px 5px rgb(255, 0, 0);
+}
+
+.statsCard {
+  display: flex;
+  justify-content: space-around;
+  background: linear-gradient(to bottom, rgba(245, 11, 10, 0.5), black);
+  border: 2px solid rgba(245, 11, 10, 0.8);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 2.75rem !important;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.statsCard:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 20px 5px rgb(255, 0, 0);
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.statItem p:first-child {
+  font-size: 1.5rem;
+}
+
+.statItem p:last-child {
+  font-size: 0.875rem;
+}
+
+.heroImageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.heroImageBox {
+  background-color: black;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  height: 500px;
+  display: flex;
+  align-items: flex-end;
+  /* position: relative; */
+  transition: transform 0.7s, box-shadow 0.7s;
+}
+
+.heroImageBox:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0px 20px 5px rgb(255, 0, 0);
+}
+
+.spinCircle {
+  /* position: absolute; */
+  top: 1rem;
+  left: 0;
+  object-fit: cover;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  animation: spin 4s linear infinite;
+  transition-duration: 0.3s;
+}
+
+.heroImage {
+  object-fit: cover;
+  display: none;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  transition: all 0.7s;
+}
+
+.heroImage:hover {
+  filter: grayscale(100%);
+  transform: scale(0.9);
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (min-width: 640px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  .brandInfo {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .textWrap {
+    text-align: left;
+  }
+
+  .btn {
+    display: flex;
+    justify-self: flex-start;
+    margin-left: 0;
+  }
+
+  .heroImageWrapper {
+    justify-content: flex-end;
+  }
+  .statsCard {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .nameText {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+}
