@@ -1,9 +1,6 @@
 import { ReactElement } from "react";
 import { CiPen } from "react-icons/ci";
 import { FaEthernet, FaScrewdriver } from "react-icons/fa";
-import Project1 from ".././assets/p1.png";
-import Project2 from ".././assets/p2.png";
-import Project3 from ".././assets/p3.png";
 
 type NavlinksProps = {
   id: number;

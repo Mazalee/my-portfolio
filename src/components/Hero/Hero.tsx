@@ -30,7 +30,7 @@ const Hero = () => {
                 initial="initial"
                 animate="animate"
               >
-                Hello, I'm
+                Hello, I am
               </motion.p>
               <motion.p
                 variants={slideUp(0.5)}
